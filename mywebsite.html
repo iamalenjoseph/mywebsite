@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Alen Joseph</title>
+
+    <!-- Add Google Font for Quicksand -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            height: auto;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        /* Blurred Background */
+        .blurred-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('header.jpg') no-repeat center center;
+            background-size: cover;
+            filter: blur(8px);
+            z-index: 0;
+        }
+
+        .content {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.438);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        /* Header with an image background */
+        header {
+            font-family: 'Quicksand', sans-serif; /* Apply Quicksand font */
+            background: url('header.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        .social-links {
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s, text-shadow 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            color: black;
+        }
+
+        .social-links a:hover {
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Centering the image */
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        /* Adjust the spacing between h2 and the paragraph */
+        h2 {
+            margin-bottom: 5px; /* Reduced space below the heading */
+        }
+
+        h2 + p {
+            margin-top: 0; /* Remove extra space above the paragraph */
+        }
+    </style>
+</head>
+<body>
+    <div class="blurred-background"></div> <!-- Div for blurred background -->
+    <div class="content">
+        <header>
+            <h1>Hey, My name is Alen Joseph</h1>
+        </header>
+        <h2>About Me</h2>
+        <p>I am an Electronics Engineering student at <a href="https://sjec.ac.in/" target="_blank">St. Joseph Engineering College</a>.</p>
+
+        <!-- Wrapping the image in a container for centering -->
+        <div class="image-container">
+            <img src="image.jpg" alt="A description of the image" style="width: 400px;">
+        </div>
+
+        <h2>What I'm Working On</h2>
+        <p>I'm currently working on how to create a website.</p>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/iamalenjoseph" target="_blank">
+                <img src="instagram logo.png" alt="Instagram Logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                <span>Instagram</span>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Alen Joseph. All rights reserved.</p>
+    </footer>
+</body>
+</html>
